@@ -54,7 +54,6 @@ pyflakes==1.6.0
 Pygments==2.2.0
 pylint==1.8.4
 pyparsing==2.2.0
-pypiwin32==220
 PyQt5==5.9.2
 pytest==3.5.0
 python-dateutil==2.7.2
