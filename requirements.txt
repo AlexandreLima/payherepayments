@@ -22,7 +22,6 @@ more-itertools==4.1.0
 pluggy==0.6.0
 py==1.5.3
 pylint==1.8.3
-pypiwin32==220
 pytest==3.5.0
 pytz==2018.3
 PyYAML==3.12
