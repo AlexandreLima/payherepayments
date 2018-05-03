@@ -12,6 +12,7 @@ ADD requirements.txt /code/
 
 # Executa o pip
 RUN pip install -r requirements.txt
+RUN python manage.py runserver
 
 # "Copia" os arquivos locais para o diretorio code no container 
 ADD . /code/     

@@ -11,7 +11,7 @@ class Sale(models.Model):
     creation_date = models.DateTimeField(default=now, editable=False,  blank=False, null=False)
 
         
-class Cutomer(models.Model):
+class Customer(models.Model):
     id =  models.AutoField(primary_key=True)
     name = models.CharField(max_length=500, blank=False, null=False)
     email = models.CharField(max_length=100, blank=False, null=False)

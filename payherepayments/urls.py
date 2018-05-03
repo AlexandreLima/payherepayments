@@ -21,5 +21,6 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url('sale/', views.Sale.as_view()),
     url(r'^$', views.api_root),
 ]
