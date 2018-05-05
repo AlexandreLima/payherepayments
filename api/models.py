@@ -6,13 +6,13 @@ class Sale(models.Model):
     def __init__(self, *args):
         super(Sale, self).__init__(*args)
 
-    id =  models.AutoField(primary_key=True)
+    id =  models.AutoField(primary_key=True, auto_created=True)
     transaction_id = models.UUIDField(default=uuid.uuid4, editable=False, null=False)
     creation_date = models.DateTimeField(default=now, editable=False,  blank=False, null=False)
 
         
 class Customer(models.Model):
-    id =  models.AutoField(primary_key=True)
+    id =  models.AutoField(primary_key=True, auto_created=True)
     name = models.CharField(max_length=500, blank=False, null=False)
     email = models.CharField(max_length=100, blank=False, null=False)
     document = models.CharField(max_length=20, blank=False, null=False)
@@ -20,7 +20,7 @@ class Customer(models.Model):
     
 
 class CreditCard(models.Model):
-    id =  models.AutoField(primary_key=True)
+    id =  models.AutoField(primary_key=True, auto_created=True)
     sale = models.ForeignKey(Sale, on_delete=models.CASCADE, related_name="creditcards")
     aquirer_name = models.CharField(max_length=500, blank=False, null=False)
     aquirer_key = models.CharField(max_length=500, blank=False, null=False)
@@ -33,7 +33,7 @@ class CreditCard(models.Model):
     
 
 class Item(models.Model):
-    id =  models.AutoField(primary_key=True)
+    id =  models.AutoField(primary_key=True, auto_created=True)
     sale = models.ForeignKey(Sale, on_delete=models.CASCADE, related_name="items")
     description = models.CharField(max_length=500, blank=False, null=False)
     quantity = models.IntegerField(null=False)
@@ -41,7 +41,7 @@ class Item(models.Model):
     total_amount_in_cents = models.IntegerField(null=False)
 
 class Recurrency(models.Model):
-    id =  models.AutoField(primary_key=True)
+    id =  models.AutoField(primary_key=True,auto_created=True)
     frequency = models.IntegerField(null=False)
     start_billing_date = models.DateField(null= False)
     end_billing_date = models.IntegerField(null= False)
@@ -50,13 +50,13 @@ class Recurrency(models.Model):
     
 
 class Adquirer(models.Model):
-    id =  models.AutoField(primary_key=True)
+    id =  models.AutoField(primary_key=True, auto_created=True )
     name = models.CharField(max_length=500, null=False, blank=False)
     key_name = models.CharField(max_length=10, null=False, blank=False)
 
 
 class Client(models.Model):
-    id =  models.AutoField(primary_key=True)
+    id =  models.AutoField(primary_key=True, auto_created=True)
     name = models.CharField(max_length=40, null=False, blank=False)
     cnpj = models.CharField(max_length=40, null=False, blank=False)
     token = models.UUIDField(default=uuid.uuid4, editable=False, null=False)
