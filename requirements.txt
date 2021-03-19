@@ -6,7 +6,7 @@ chardet==3.0.4
 colorama==0.3.9
 Django==2.0.3
 django-filter==1.1.0
-djangorestframework==3.7.7
+djangorestframework==3.11.2
 docker==3.1.4
 docker-compose==1.20.1
 docker-pycreds==0.2.2
@@ -44,7 +44,7 @@ chardet==3.0.4
 colorama==0.3.9
 Django==2.0.3
 django-filter==1.1.0
-djangorestframework==3.7.7
+djangorestframework==3.11.2
 docker==3.1.4
 docker-compose==1.20.1
 docker-pycreds==0.2.2
