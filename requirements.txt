@@ -29,7 +29,7 @@ pyparsing==2.2.0
 PyQt5==5.9.2
 pytest==3.5.0
 pytz==2018.3
-PyYAML==3.12
+PyYAML==5.4
 requests==2.18.4
 six==1.11.0
 texttable==0.9.1
@@ -61,7 +61,7 @@ pluggy==0.6.0
 py==1.5.3
 pytest==3.5.0
 pytz==2018.3
-PyYAML==3.12
+PyYAML==5.4
 requests==2.18.4
 six==1.11.0
 texttable==0.9.1
