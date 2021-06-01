@@ -33,7 +33,7 @@ PyYAML==3.12
 requests==2.18.4
 six==1.11.0
 texttable==0.9.1
-urllib3==1.22
+urllib3==1.26.5
 websocket-client==0.47.0
 wrapt==1.10.11
 astroid==1.6.2
@@ -65,7 +65,7 @@ PyYAML==3.12
 requests==2.18.4
 six==1.11.0
 texttable==0.9.1
-urllib3==1.22
+urllib3==1.26.5
 websocket-client==0.47.0
 wrapt==1.10.11
 whitenoise==3.3.1
